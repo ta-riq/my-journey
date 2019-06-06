@@ -1,3 +1,4 @@
-body {
-  color: green;
+:root {
+  --primary-color: white;
+  --secondary-color: green;
 }
