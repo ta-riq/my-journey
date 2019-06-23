@@ -1,0 +1,44 @@
+:root {
+    --square: blue;
+    --circle: green;
+    --oval: yellow;
+    --triangle-right: violet;
+    --triangle-left: red;
+    --triangle-up: orange;
+    --triangle-down: skyblue;
+}
+/* Styling the span element */
+span {
+    display: inline-block;
+    background-color: #00000055;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: var(--square, green) /* Added an extra Fallback value*/
+}
+/* Circle */
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: var(--circle, aqua);
+    border-radius: 50%;
+}
+/* Oval */
+.oval {
+    height: 100px;
+    width: 200px;
+    background-color: var(--oval, orange);
+    border-radius: 50%;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid var(--triangle-up, red);
+}
