@@ -42,3 +42,10 @@ span {
     border-right: 100px solid transparent;
     border-bottom: 200px solid var(--triangle-up, red);
 }
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid var(--triangle-down,violet);
+}
