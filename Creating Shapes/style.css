@@ -6,6 +6,7 @@
     --triangle-left: red;
     --triangle-up: orange;
     --triangle-down: skyblue;
+    --bg: #00000088;
 }
 /* Styling the span element */
 span {
@@ -13,8 +14,11 @@ span {
     background-color: #00000055;
     padding: 10px 20px;
     margin-bottom: 20px;
+    margin-right: 100px;
 }
-
+div {
+    display: inline-block;
+}
 
 .square {
     width: 200px;
@@ -48,4 +52,11 @@ span {
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-top: 200px solid var(--triangle-down,violet);
+}
+.triangle-left {
+    width: 0;
+    height:0;
+    border-top: 100px solid transparent;
+    border-right: 200px solid var(--triangle-left, blue);
+    border-bottom: 100px solid transparent;
 }
