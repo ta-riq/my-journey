@@ -60,3 +60,10 @@ div {
     border-right: 200px solid var(--triangle-left, blue);
     border-bottom: 100px solid transparent;
 }
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 200px solid var(--triangle-right, red);
+}
