@@ -8,11 +8,14 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    /* text-align: center; */
 }
-.top-section {
-    /* background-color: green; */
-    /* text-align: right; */
+header {
+    background-image: url(venice-bg.jpg);
+    min-height: 100vh;
+    background-size: 100%;
 }
+
 
 a.logo-section {
     /* background-color: red; */
@@ -28,7 +31,9 @@ img.logo {
 }
 .logo-text {
     font-size: 30px;
-    color: darkorange;
+    font-weight: bolder;
+    font-family: monospace;
+    color: white;
     vertical-align: middle;
 }
 nav.navigation {
@@ -40,4 +45,31 @@ nav.navigation {
     color: darkorange;
     font-weight: bold;
     padding: 30px 30px;
+}
+.navigation a:hover {
+    background-color: darkorange;
+    color: white;
+    transition: 0.7s;
+}
+.slider p {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+.btn-container {
+    /* max-width: 500px; */
+    margin: 0 auto;
+    text-align: center;
+}
+.slider {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.slider a {
+    text-decoration: none;
+    color: white;
+    background-color: darkorange;
+    padding: 20px 30px;
+    margin: 0 10px;
+    border-radius: 5px;
 }
