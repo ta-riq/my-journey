@@ -4,27 +4,54 @@
     font-family: sans-serif;
 }
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    background-color: red;
-    /* overflow: auto; */
 }
-.menu {}
-.menu ul {
+nav ul {
     list-style-type: none;
 }
-.menu ul li {
+nav ul li {
     float: left;
     margin-right: 2px;
+    position: relative;
 }
-.menu ul li a {
+nav ul li a {
     color: white;
     background-color: #212121;
     text-decoration: none;
     padding: 15px 30px;
     display: block;
 }
-.menu ul li ul.submenu {}
-.menu ul li ul.submenu li {}
-.menu ul li ul.submenu li a {}
+nav ul li:hover > a {
+    background-color: rgb(5, 124, 235);
+}
+/* Sub menu */
+nav ul li ul.submenu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 200px;
+    transition: 1s all;
+    visibility: hidden;
+    opacity: 0;
+}
+nav ul li:hover > ul.submenu {
+    opacity: 1;
+    visibility: visible;
+     top: 100%;
+}
+nav ul li ul.submenu li {
+    float: none;
+    border-bottom: 1px solid #777;
+    margin: 0;
+}
+nav ul li ul.submenu li a {
+    padding: 12px 15px;
+}
+/*    grand child */
+nav ul li ul.submenu li > ul.submenu {
+    left: 100%;
+    top: 0;
+}
+
 
