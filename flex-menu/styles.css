@@ -29,19 +29,20 @@ nav ul {
     /* background-color: green; */
     list-style-type: none;
 }
-/* nav ul li {
-    padding: 10px 20px;
-} */
+nav ul li {
+    position: relative;
+}
 nav ul li a {
+    box-sizing: border-box;
     color: grey;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 40px 0;
     border-bottom: 1px solid transparent;
     transition: all 0.5s;
 }
-nav ul li a:hover {
+nav ul li a:hover{
     color: yellow;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid red;
 }
 .cta-btn {
     color: #121212;
@@ -63,10 +64,12 @@ nav ul li a:hover {
     Main Style
 
 */
+
 main {
-    /* margin: 100p auto; */
-    padding: 80px 200px 0;
-    /* padding-top: 100px; */
+    border:2px solid green;
+    margin: 50px 200px;
+    overflow: auto;
+    padding: 20px;
 }
 main > img {
     float: left;
@@ -81,4 +84,28 @@ main > p {
     font-size: 16px;
     text-align: justify;
     text-transform: capitalize;
+}
+nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+}
+nav ul li ul li {
+    display: none;
+    background-color: green;
+    text-align: left;
+}
+nav ul li ul li a {
+    display:block;
+    line-height: 40px;
+    padding: 0 30px;
+    color: black;
+}
+nav ul li ul li a:hover {
+    color: red;
+    border-bottom: 1px solid black;
+}
+nav ul li:hover ul li {
+    display: block;
 }
