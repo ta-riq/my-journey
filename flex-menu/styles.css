@@ -31,12 +31,13 @@ nav ul {
 }
 nav ul li {
     position: relative;
+    padding: 0 10px;
 }
 nav ul li a {
     box-sizing: border-box;
     color: grey;
     text-transform: uppercase;
-    padding: 40px 0;
+    padding: 10px 0;
     border-bottom: 1px solid transparent;
     transition: all 0.5s;
 }
@@ -85,27 +86,11 @@ main > p {
     text-align: justify;
     text-transform: capitalize;
 }
+nav ul li > ul {
+float: left;                        
+}
 nav ul li ul {
-    display: flex;
-    flex-direction: column;
+
     position: absolute;
-    top: 100%;
-}
-nav ul li ul li {
-    display: none;
-    background-color: green;
-    text-align: left;
-}
-nav ul li ul li a {
-    display:block;
-    line-height: 40px;
-    padding: 0 30px;
-    color: black;
-}
-nav ul li ul li a:hover {
-    color: red;
-    border-bottom: 1px solid black;
-}
-nav ul li:hover ul li {
-    display: block;
+
 }
