@@ -1,0 +1,45 @@
+/*
+ * @Author: mikey.zhaopeng 
+ * @Date: 2019-10-15 22:45:05 
+ * @Last Modified by:   mikey.zhaopeng 
+ * @Last Modified time: 2019-10-15 22:45:05 
+ */
+
+
+
+
+body,
+h1 {
+  margin          : 0rem;
+
+}
+
+.navigation {
+  position        : absolute;
+  left            : 0;
+  width           : 10rem;
+  height          : 100%;
+  background-color: lightgray;
+  text-align      : center;
+  -webkit-transform: matrix3d(1.875rem , 2.5rem);
+  
+}
+
+.navigation ul {
+  padding         : 0;
+  list-style-type : none;
+}
+
+.navigation li {
+  padding         : 1rem;
+  margin          : 1.25rem 2.5rem;
+  
+}
+
+.content {
+  padding-top     : 1rem;
+  margin-left     : 12rem;
+  padding         : .75rem;
+  border          : .1875rem solid green;
+  
+}
