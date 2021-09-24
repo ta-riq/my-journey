@@ -153,6 +153,9 @@ header > nav.menu > ul {
 ** What Section
 **
 */
+
+
+
 .what-section
 {
   display: flex;
@@ -234,6 +237,15 @@ header > nav.menu > ul {
 text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
 .what-section > .right-panel .box-1{
   border-right: 2px solid greenyellow;
   border-bottom: 2px solid greenyellow;
@@ -258,11 +270,17 @@ text-align: center;
   margin: 0;
   margin-top: 1rem;
 }
+
+
+
+
+
+
+
+
+
 .what-section > .right-panel .box-1:hover > h5{
   font-size: 3rem;
-}
-.what-section > .right-panel .box-1:hover > p {
-  font-size: large;
 }
 .what-section > .right-panel .box-2:hover > h5 {
   font-size: 3rem;
@@ -272,6 +290,9 @@ text-align: center;
 }
 .what-section > .right-panel .box-4:hover > h5 {
   font-size: 3rem;
+}
+.what-section > .right-panel .box-1:hover > p {
+  font-size: large;
 }
 .what-section > .right-panel .box-2:hover > p {
   font-size: large;
